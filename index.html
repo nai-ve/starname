@@ -1,0 +1,20 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <title>随机点名</title>  
+  <script>  
+    // 检测用户设备类型  
+    function detectDevice() {  
+      var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);  
+      if (isMobile) {  
+        window.location.href = "phone.html";  
+      } else {  
+        window.location.href = "pc.html"; 
+      }  
+    }  
+  </script>  
+</head>  
+<body onload="detectDevice()">  
+  Loading
+</body>  
+</html>
